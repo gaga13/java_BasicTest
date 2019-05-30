@@ -1,0 +1,21 @@
+class SumTest4 
+{
+	public static void main(String[] args) 
+	{
+		int i;
+		
+		for (i = 1; i <= 10 ; i++ )
+		{
+			if (i == 5) return;
+
+			System.out.print(i + " ");
+			
+		}
+		System.out.println("\n프로그램을 종료합니다.");
+	}
+}
+/*
+break : 자기가 속한 반복문 종료
+continue : 반복문의 맨 앞으로(이번 한번만 넘어감) -> 조건식으로 넘어감
+return : 자기가 속한 메소드(함수) 종료
+*/

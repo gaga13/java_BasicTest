@@ -1,0 +1,35 @@
+//소수(약수가 1과 자기 자신) 구하기 => 나눌숫자 반까지 나눠보기
+class PrimeNumber 
+{
+	public static void main(String[] args) 
+	{
+		int a, b, cnt;
+
+		for (a = 2; a < 100; a++)
+		{
+			for (b = 2; b <= a; b++)
+			{
+				if (a % b == 0) 
+				{
+					if (a == b)	System.out.printf("%3d", a);
+					else break;
+				}	
+			}	
+		}
+
+		
+		out:
+			for (a = 2; a < 100; a++)
+			{
+				for (b = 2; b < a / 2; b++ )	//a=2, b=2일때는 두번째 for문의 조건을 충족하지 못해 for문에 걸리지 않고 출력됨
+				{
+					if (a % b == 0)
+					{
+						continue out;			//out:for 구문으로 감.
+					}
+				}
+				System.out.printf("%3d", a);
+			}
+			
+	}
+}

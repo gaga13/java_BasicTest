@@ -1,0 +1,31 @@
+//사용자에게 알고싶은 유니코드 2개 입력
+
+import java.util.Scanner;
+
+class ForTest8 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		int a, b, cnt;
+		
+		cnt = 0;
+
+		System.out.print("몇 번부터 : ");
+		a = scan.nextInt();
+
+		System.out.print("몇 번까지 : ");
+		b = scan.nextInt();
+		
+		for (; a <= b ; a++ )
+		{
+			System.out.print(a + ": " + (char)a + "  " );
+				cnt++;
+				if (cnt % 5 == 0)
+				{
+					System.out.println();
+				}
+		    
+		}
+	}
+}

@@ -1,0 +1,13 @@
+class ForTest9 
+{
+	public static void main(String[] args) 
+	{
+		double d;
+		
+		for (d = 0.0; d < 2.0; d +=0.2 )
+		{
+			System.out.println(d);
+		}
+		
+	}
+}

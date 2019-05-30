@@ -1,0 +1,46 @@
+
+class LoopTest3 
+{
+	public static void main(String[] args) 
+	{
+		int i, j;
+
+/*
+0 0 0 0 0
+1 1 1 1 1
+2 2 2 2 2 
+3 3 3 3 3 
+4 4 4 4 4 
+*/
+
+		for (i = 0; i < 5 ; i++)
+		{
+			for (j = 0; j < 5 ; j++ )
+			{
+				System.out.print(j + " ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+
+/*
+1 2 3 4 5
+2 3 4 5 
+3 4 5 
+4 5 
+5 
+*/
+
+		for (i = 1; i < 6; i++)				//횟수 제어
+		{	
+			for (j = i; j < 6 ; j++)		//출력되는 값
+			{
+				System.out.print(j + " ");
+			}
+			System.out.println();
+		}
+	
+	System.out.println("--------------");
+
+	}
+}
